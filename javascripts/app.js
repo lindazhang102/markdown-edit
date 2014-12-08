@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('#markdown').change(function(){
+  $('#markdown').keyup(function(){
     text = markdown.toHTML( $('#markdown').val());
     $('#html').html(text);
   });
