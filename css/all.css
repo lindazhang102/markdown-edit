@@ -6,7 +6,7 @@
   float: right;
 }
 
-textarea {
-  width: 45%;
+textarea, div.right {
+  width: 48%;
   height: 80%;
 }
