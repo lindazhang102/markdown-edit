@@ -6,17 +6,6 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('#button1').click(function(){
-     var selection=window.getSelection()
-     text=$("#markdown").replaceSelectedText("'**'+selection'**'");
-     $('#markdown').val(text);
-     console.log(text);
-     text = markdown.toHTML( text );
-     $('#html').html(text);
-    });
-});
-
-$(document).ready(function(){
   var selection;
   $('textarea').keyup(function(){
     console.log(selection)
@@ -36,4 +25,13 @@ $(document).ready(function(){
     text = markdown.toHTML( text );
     $('#html').html(text);
   });
-});
+
+  $('#button1').click(function(){
+     text=$("#markdown").val().replace(selection,'**'+selection+'**');
+     console.log(text);
+     $('#markdown').val(text);
+     console.log(text);
+     text = markdown.toHTML( text );
+     $('#html').html(text);
+    });
+  });

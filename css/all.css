@@ -35,3 +35,7 @@ h1 {
   font-style: italic;
   background-color: gray;
 }
+
+p {
+  font-weight: normal;
+}
