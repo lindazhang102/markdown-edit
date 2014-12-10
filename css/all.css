@@ -8,5 +8,30 @@
 
 textarea, div.right {
   width: 48%;
-  height: 90%;
+  height: 100%;
+}
+
+#markdown,#html{
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  color:blue;
+  font-style: italic;
+}
+
+#button1{
+  color: black;
+  font-weight: bolder;
+  font-size: 1.1em;
+  background-color: gray;
+}
+
+#button2{
+  color: black;
+  font-weight: bolder;
+  font-size: 1.1em;
+  font-style: italic;
+  background-color: gray;
 }
