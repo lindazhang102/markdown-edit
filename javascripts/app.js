@@ -34,4 +34,13 @@ $(document).ready(function(){
      text = markdown.toHTML( text );
      $('#html').html(text);
     });
+
+  $('#button5').click(function(){
+     text=$("#markdown").val().replace(selection,'> '+selection);
+     console.log(text);
+     $('#markdown').val(text);
+     console.log(text);
+     text = markdown.toHTML( text );
+     $('#html').html(text);
+    });
   });

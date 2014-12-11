@@ -21,19 +21,19 @@ h1 {
   font-style: italic;
 }
 
-#button1{
-  color: black;
-  font-weight: bolder;
-  font-size: 1.1em;
+#button{
   background-color: gray;
 }
 
+#button1{
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
 #button2{
-  color: black;
   font-weight: bolder;
   font-size: 1.1em;
   font-style: italic;
-  background-color: gray;
 }
 
 p {

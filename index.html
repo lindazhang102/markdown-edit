@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Online Markdown Editor</title>
     <link rel="stylesheet" href="css/all.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="bower_components/jquery/dist/jquery.js" type="text/javascript" charset="utf-8" async defer></script>
     <script src="node_modules/markdown/lib/markdown.js"></script>
     <script src="javascripts/app.js" type="text/javascript" charset="utf-8" async defer></script>
@@ -10,11 +12,23 @@
   <body>
     <h1>Online Markdown Editor</h1>
     <div id="button">
-       <button id="button1" " type="button"  value="B" title="<strong>ctrl+B">B</button>
-       <button id="button2" " type="button"  value="I" title="<em>ctrl+ I">I</button>
-
+      <a id="button1" href="#" href="#" title="<strong>ctrl+B">
+        <i class="fa fa-bold"></i>
+      </a>
+      <a id="button2" href="#" title="<em>ctrl+ I">
+        <i class="fa fa-italic"></i>
+      </a>
+      <a id="button3" href="#" title="undo<ctrl+Z>">
+        <i class="fa fa-repeat"></i>
+      </a>
+      <a id="button4" href="#" title="repeat<ctrl+Y>">
+        <i class="fa fa-rotate-left"></i>
+      </a>
+      <a id="button5" href="#" title="blockquote<ctrl+Q>">
+        <i class="fa fa-quote-left fa-border"></i>
+      </a>
     </div>
-    <br>
+   <br>
     <textarea class='left' id='markdown'></textarea>
     <div class='right' id='html'></div>
   </body>
