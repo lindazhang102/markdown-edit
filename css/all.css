@@ -39,3 +39,9 @@ h1 {
 p {
   font-weight: normal;
 }
+
+#editor {
+       position: absolute;
+       width: 500px;
+       height: 400px;
+   }

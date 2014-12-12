@@ -11,7 +11,7 @@
   </head>
   <body>
     <h1>Online Markdown Editor</h1>
-    <div id="button">
+      <div id="button" >
       <a id="button1" href="#" href="#" title="<strong>ctrl+B">
         <i class="fa fa-bold"></i>
       </a>
@@ -28,8 +28,14 @@
         <i class="fa fa-quote-left fa-border"></i>
       </a>
     </div>
-   <br>
+    <br>
+    <div id="editor">
     <textarea class='left' id='markdown'></textarea>
+    </div>
     <div class='right' id='html'></div>
-  </body>
+    <script src="ace-builds/src/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            var editor = ace.edit("editor");
+        </script>
+   </body>
   </html>
